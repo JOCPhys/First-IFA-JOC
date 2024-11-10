@@ -54,21 +54,6 @@
 #backdrop {
 background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%); 
 }
-/* Google Fonts own improt 
-.dongle-regular {
-  font-family: "Dongle", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-.nunito {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-  */
 
 /* Google fonts import link */
 @import url('https://fonts.googleapis.com/css2?family=Nunitof&display=swapfamily=dongle-regular&display=swap');
@@ -146,6 +131,11 @@ padding-top: 4rem; /* prevent navbar overlap */
     color: white;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+
 
 /* Navbar */
 
@@ -193,27 +183,17 @@ padding-top: 4rem; /* prevent navbar overlap */
 
 }
 
+body { 
+    background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%); 
+    margin: 0; height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; } 
+    
+    h1 { 
+        color: black; font-family: Arial, sans-serif; 
+    }
 
-
-.student-discount {
-
-    background-color: var(--highlight-color);
-
-    font-weight: bold;
-
-    color: white;
-
-    display: block;
-
-    max-width: 300px;
-
-    margin: auto;
-
-    padding: 5px 10px;
-
-    font-size: 0.8rem;
-
-}
 
 
 /* Game library cards */
