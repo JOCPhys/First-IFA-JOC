@@ -1,0 +1,22 @@
+ a href=""
+<a href="jstyle2.js">
+    <img src="path_to_image" alt="Description of image">
+</a>
+
+const images = [
+    { src: "image1.jpg", label: "Image 1", description: "Description for image 1" },
+    { src: "image2.jpg", label: "Image 2", description: "Description for image 2" },
+   <!-- { src: "image3.jpg", label: "Image 3", description: "Description for image 3" } -->
+];
+
+let htmlContent = '';
+
+images.forEach(image => {
+    htmlContent += `
+        <img src="${image.src}" alt="${image.src}">
+        <label for="${image.src}">${image.label}</label>
+        <p>${image.description}</p>
+    `;
+});
+
+document.write(htmlContent);

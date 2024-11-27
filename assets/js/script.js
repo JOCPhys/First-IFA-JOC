@@ -7,7 +7,7 @@ const myList = document.querySelector("#myList");
 addToListButton.addEventListener("click", addToList);
 
 // add event listener to text input (so can press enter or press button to add item to list)
-listTextInput.addEventListener("keypress", function(e) {
+listTextInput.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
         addToList(e);
     }
@@ -47,3 +47,6 @@ function removeFromList(button) {
         listTextInput.focus();
     }
 }
+
+
+
