@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo TO DO list</title>
+</head>
+<body>
+    <h1>TO DO List</h1>
+<input type="text" id="listTextInput">
+<button id="addToListButton">Add to List</button>
+<ul id="myList">
+
+
+</ul>
+<script src="script.js"></script>
+</body>
+</html>
