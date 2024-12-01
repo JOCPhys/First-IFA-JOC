@@ -201,3 +201,72 @@ body {
 }
 }
 
+.hazard-card {
+  width: 100px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.hazard-card .front-face,
+.hazard-card .back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.hazard-card .front-face {
+  transform: rotateY(180deg);
+}
+
+.hazard-card.flip {
+  transform: rotateY(180deg);
+}
+
+.back-face {
+  background-color: #7fffd4;
+}
+
+.front-face {
+  background: white;
+  padding: 4px;
+}
+
+.counters {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  background-color: rgba(0, 139, 139, 0.9);
+  border-radius: 5px;
+  border: 5px black solid;
+}
+
+.counter-button {
+  background-color: white;
+  border: 2px solid #FF8400;
+  color: black;
+  margin: 0 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.counter-button:hover {
+  background-color: #FF8400;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hazard-card {
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+  }
+}
+
